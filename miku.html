@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miku Murder Mystery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4a5568;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .clue-container {
+            background: #f7fafc;
+            border: 3px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        
+        .clue-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+        
+        .clue-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            margin: 20px 0;
+        }
+        
+        .error-message {
+            color: #e53e3e;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .welcome-message {
+            color: #4a5568;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .access-code {
+            background: #edf2f7;
+            border: 2px dashed #a0aec0;
+            border-radius: 8px;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #4a5568;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎵 Miku Murder Mystery 🔍</div>
+        
+        <!-- Welcome Screen -->
+        <div id="welcome" class="welcome-message">
+            <h2>Welcome to the Miku Murder Mystery!</h2>
+            <p>Each clue must be accessed through its unique QR code.</p>
+            <p>Scan a QR code to reveal the corresponding clue and continue your investigation!</p>
+            <p>Good luck, detective! 🕵️‍♀️</p>
+        </div>
+        
+        <!-- Clue 1 -->
+        <div id="clue1" class="clue-container hidden">
+            <div class="clue-title">🔍 Clue #1</div>
+            <img src="images/Clue 1.png" alt="Clue 1" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: C1-MIKU-7834</div>
+        </div>
+        
+        <!-- Clue 3 -->
+        <div id="clue3" class="clue-container hidden">
+            <div class="clue-title">🔍 Clue #3</div>
+            <img src="images/Clue 3.png" alt="Clue 3" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: C3-MIKU-2156</div>
+        </div>
+        
+        <!-- Clue 4 -->
+        <div id="clue4" class="clue-container hidden">
+            <div class="clue-title">🔍 Clue #4</div>
+            <img src="images/Clue 4.png" alt="Clue 4" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: C4-MIKU-9021</div>
+        </div>
+        
+        <!-- Clue 5 -->
+        <div id="clue5" class="clue-container hidden">
+            <div class="clue-title">🔍 Clue #5</div>
+            <img src="images/Clue 5.png" alt="Clue 5" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: C5-MIKU-4567</div>
+        </div>
+        
+        <!-- Clue 6 -->
+        <div id="clue6" class="clue-container hidden">
+            <div class="clue-title">🔍 Clue #6</div>
+            <img src="images/Clue 6.png" alt="Clue 6" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: C6-MIKU-8912</div>
+        </div>
+        
+        <!-- Clue 7 -->
+        <div id="clue7" class="clue-container hidden">
+            <div class="clue-title">🔍 Clue #7</div>
+            <img src="images/Clue 7.png" alt="Clue 7" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: C7-MIKU-3485</div>
+        </div>
+        
+        <!-- Clue 8 -->
+        <div id="clue8" class="clue-container hidden">
+            <div class="clue-title">🔍 Clue #8</div>
+            <img src="images/Clue 8.png" alt="Clue 8" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: C8-MIKU-6739</div>
+        </div>
+        
+        <!-- Special Clues -->
+        
+        <div id="start" class="clue-container hidden">
+            <div class="clue-title">🏁 Investigation Start</div>
+            <img src="images/Start.png" alt="Investigation Start" class="clue-image" onerror="this.style.display='none'">
+            <div class="access-code">Access Code: START-MIKU-1000</div>
+        </div>
+        
+        <!-- Error message for invalid access -->
+        <div id="error" class="error-message hidden">
+            <h3>⚠️ Access Denied</h3>
+            <p>This clue can only be accessed through its QR code!</p>
+            <p>Please scan the appropriate QR code to continue.</p>
+        </div>
+    </div>
+
+    <script>
+        // Define secure access tokens for each clue
+        const clueTokens = {
+            'c1-7834-miku': 'clue1',
+            'c3-2156-miku': 'clue3', 
+            'c4-9021-miku': 'clue4',
+            'c5-4567-miku': 'clue5',
+            'c6-8912-miku': 'clue6',
+            'c7-3485-miku': 'clue7',
+            'c8-6739-miku': 'clue8',
+            'start-1000-miku': 'start'
+        };
+        
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        function showClue(clueId) {
+            // Hide welcome message
+            document.getElementById('welcome').classList.add('hidden');
+            
+            // Hide all clues
+            Object.values(clueTokens).forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+            
+            // Show the requested clue
+            document.getElementById(clueId).classList.remove('hidden');
+        }
+        
+        function showError() {
+            document.getElementById('welcome').classList.add('hidden');
+            document.getElementById('error').classList.remove('hidden');
+        }
+        
+        // Check for access token in URL
+        window.addEventListener('load', function() {
+            const token = getUrlParameter('token');
+            
+            if (token && clueTokens[token.toLowerCase()]) {
+                showClue(clueTokens[token.toLowerCase()]);
+            } else if (token) {
+                showError();
+            }
+            // If no token, show welcome screen (default)
+        });
+        
+        // Prevent right-click and inspect element (basic protection)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
