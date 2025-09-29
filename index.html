@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Redirect to miku.html while preserving any URL parameters (tokens)
-        window.location.href = 'miku.html' + window.location.search;
+        // If no token provided, redirect to Start token
+        // If token provided, preserve it
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        
+        if (token) {
+            // Preserve existing token
+            window.location.href = 'miku.html' + window.location.search;
+        } else {
+            // No token, redirect to Start
+            window.location.href = 'miku.html?token=miku-start-x9k2p7w4';
+        }
     </script>
 </head>
 <body>
