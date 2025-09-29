@@ -60,10 +60,21 @@
         }
         
         .error-message {
-            color: #e53e3e;
+            color: white;
             font-size: 1.2em;
             font-weight: bold;
             text-align: center;
+            background-image: url('Miku Murder Mystery/Mad-Miku.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
         
         .welcome-message {
@@ -135,7 +146,7 @@
         
         <!-- Error message for invalid access -->
         <div id="error" class="error-message hidden">
-            <h3>⚠️ Access Denied</h3>
+            <h3>⚠️ Access Denied ⚠️</h3>
             <p>This clue can only be accessed through its QR code!</p>
             <p>Please scan the appropriate QR code to continue.</p>
         </div>
