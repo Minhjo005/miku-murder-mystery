@@ -8,7 +8,7 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 10px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -20,10 +20,16 @@
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            padding: 40px;
+            padding: 20px;
             text-align: center;
-            max-width: 600px;
-            margin: 20px;
+            width: 95vw;
+            height: 95vh;
+            max-width: none;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .logo {
@@ -38,8 +44,14 @@
             background: #f7fafc;
             border: 3px solid #e2e8f0;
             border-radius: 15px;
-            padding: 30px;
-            margin: 20px 0;
+            padding: 20px;
+            margin: 10px 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .clue-title {
@@ -50,11 +62,14 @@
         }
         
         .clue-image {
-            max-width: 100%;
+            max-width: 90vw;
+            max-height: 75vh;
+            width: auto;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            margin: 20px 0;
+            margin: 10px 0;
+            object-fit: contain;
         }
         
         .error-message {
@@ -67,6 +82,11 @@
             color: #4a5568;
             font-size: 1.1em;
             line-height: 1.6;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .hidden {
@@ -91,58 +111,55 @@
         
         <!-- Welcome Screen -->
         <div id="welcome" class="welcome-message">
-            <h2>Welcome to the Miku Murder Mystery!</h2>
-            <p>Each clue must be accessed through its unique QR code.</p>
-            <p>Scan a QR code to reveal the corresponding clue and continue your investigation!</p>
-            <p>Good luck, detective! 🕵️‍♀️</p>
+            <img src="Miku Murder Mystery/Print On Wall.png" alt="Print On Wall" class="clue-image" onerror="this.style.display='none'">
         </div>
         
         <!-- Clue 1 -->
         <div id="clue1" class="clue-container hidden">
             <div class="clue-title">🔍 Clue #1</div>
-            <img src="images/Clue 1.png" alt="Clue 1" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Clue 1.png" alt="Clue 1" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: C1-MIKU-7834</div>
         </div>
         
         <!-- Clue 3 -->
         <div id="clue3" class="clue-container hidden">
             <div class="clue-title">🔍 Clue #3</div>
-            <img src="images/Clue 3.png" alt="Clue 3" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Clue 3.png" alt="Clue 3" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: C3-MIKU-2156</div>
         </div>
         
         <!-- Clue 4 -->
         <div id="clue4" class="clue-container hidden">
             <div class="clue-title">🔍 Clue #4</div>
-            <img src="images/Clue 4.png" alt="Clue 4" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Clue 4.png" alt="Clue 4" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: C4-MIKU-9021</div>
         </div>
         
         <!-- Clue 5 -->
         <div id="clue5" class="clue-container hidden">
             <div class="clue-title">🔍 Clue #5</div>
-            <img src="images/Clue 5.png" alt="Clue 5" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Clue 5.png" alt="Clue 5" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: C5-MIKU-4567</div>
         </div>
         
         <!-- Clue 6 -->
         <div id="clue6" class="clue-container hidden">
             <div class="clue-title">🔍 Clue #6</div>
-            <img src="images/Clue 6.png" alt="Clue 6" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Clue 6.png" alt="Clue 6" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: C6-MIKU-8912</div>
         </div>
         
         <!-- Clue 7 -->
         <div id="clue7" class="clue-container hidden">
             <div class="clue-title">🔍 Clue #7</div>
-            <img src="images/Clue 7.png" alt="Clue 7" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Clue 7.png" alt="Clue 7" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: C7-MIKU-3485</div>
         </div>
         
         <!-- Clue 8 -->
         <div id="clue8" class="clue-container hidden">
             <div class="clue-title">🔍 Clue #8</div>
-            <img src="images/Clue 8.png" alt="Clue 8" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Clue 8.png" alt="Clue 8" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: C8-MIKU-6739</div>
         </div>
         
@@ -150,7 +167,7 @@
         
         <div id="start" class="clue-container hidden">
             <div class="clue-title">🏁 Investigation Start</div>
-            <img src="images/Start.png" alt="Investigation Start" class="clue-image" onerror="this.style.display='none'">
+            <img src="Miku Murder Mystery/Start.png" alt="Investigation Start" class="clue-image" onerror="this.style.display='none'">
             <div class="access-code">Access Code: START-MIKU-1000</div>
         </div>
         

@@ -4,8 +4,8 @@ A web-based murder mystery game where clues can only be accessed through QR code
 
 ## Setup Instructions
 
-### 1. Copy Images
-Copy all the clue images from your "Miku Murder Mystery" folder to the `images/` directory:
+### 1. Image Setup
+The website references images directly from the "Miku Murder Mystery" folder. Ensure this folder contains:
 - Clue 1.png
 - Clue 3.png  
 - Clue 4.png
@@ -13,9 +13,9 @@ Copy all the clue images from your "Miku Murder Mystery" folder to the `images/`
 - Clue 6.png
 - Clue 7.png
 - Clue 8.png
-- Load bearing coconut.png
-- Print On Wall.png
 - Start.png
+
+*Note: Print On Wall and Load Bearing Coconut will be physical prints, not digital clues.*
 
 ### 2. QR Code URLs
 Generate QR codes for these URLs to access each clue:
