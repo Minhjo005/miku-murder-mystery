@@ -7,6 +7,7 @@ A web-based murder mystery game where clues can only be accessed through QR code
 ### 1. Image Setup
 The website references images directly from the "Miku Murder Mystery" folder. Ensure this folder contains:
 - Clue 1.png
+- Clue 2.png
 - Clue 3.png  
 - Clue 4.png
 - Clue 5.png
@@ -20,14 +21,15 @@ The website references images directly from the "Miku Murder Mystery" folder. En
 ### 2. QR Code URLs
 Generate QR codes for these URLs to access each clue:
 
-**Clue 1**: `[your-website-url]/miku.html?token=c1-7834-miku`
-**Clue 3**: `[your-website-url]/miku.html?token=c3-2156-miku`
-**Clue 4**: `[your-website-url]/miku.html?token=c4-9021-miku`
-**Clue 5**: `[your-website-url]/miku.html?token=c5-4567-miku`
-**Clue 6**: `[your-website-url]/miku.html?token=c6-8912-miku`
-**Clue 7**: `[your-website-url]/miku.html?token=c7-3485-miku`
-**Clue 8**: `[your-website-url]/miku.html?token=c8-6739-miku`
-**Start**: `[your-website-url]/miku.html?token=start-1000-miku`
+**Start**: `https://minhjo005.github.io/miku-murder-mystery/?token=start-1000-miku`
+**Clue 1**: `https://minhjo005.github.io/miku-murder-mystery/?token=c1-7834-miku`
+**Clue 2**: `https://minhjo005.github.io/miku-murder-mystery/?token=c2-9512-miku`
+**Clue 3**: `https://minhjo005.github.io/miku-murder-mystery/?token=c3-2156-miku`
+**Clue 4**: `https://minhjo005.github.io/miku-murder-mystery/?token=c4-9021-miku`
+**Clue 5**: `https://minhjo005.github.io/miku-murder-mystery/?token=c5-4567-miku`
+**Clue 6**: `https://minhjo005.github.io/miku-murder-mystery/?token=c6-8912-miku`
+**Clue 7**: `https://minhjo005.github.io/miku-murder-mystery/?token=c7-3485-miku`
+**Clue 8**: `https://minhjo005.github.io/miku-murder-mystery/?token=c8-6739-miku`
 
 ### 3. Security Features
 - Each clue has a unique access token
