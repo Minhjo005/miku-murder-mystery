@@ -21,15 +21,15 @@ The website references images directly from the "Miku Murder Mystery" folder. En
 ### 2. QR Code URLs
 Generate QR codes for these URLs to access each clue:
 
-**Start**: `https://minhjo005.github.io/miku-murder-mystery/?token=start-1000-miku`
-**Clue 1**: `https://minhjo005.github.io/miku-murder-mystery/?token=c1-7834-miku`
-**Clue 2**: `https://minhjo005.github.io/miku-murder-mystery/?token=c2-9512-miku`
-**Clue 3**: `https://minhjo005.github.io/miku-murder-mystery/?token=c3-2156-miku`
-**Clue 4**: `https://minhjo005.github.io/miku-murder-mystery/?token=c4-9021-miku`
-**Clue 5**: `https://minhjo005.github.io/miku-murder-mystery/?token=c5-4567-miku`
-**Clue 6**: `https://minhjo005.github.io/miku-murder-mystery/?token=c6-8912-miku`
-**Clue 7**: `https://minhjo005.github.io/miku-murder-mystery/?token=c7-3485-miku`
-**Clue 8**: `https://minhjo005.github.io/miku-murder-mystery/?token=c8-6739-miku`
+**Start**: `https://minhjo005.github.io/miku-murder-mystery/?token=miku-start-x9k2p7w4`
+**Clue 1**: `https://minhjo005.github.io/miku-murder-mystery/?token=hatsune-clue1-q8m5n3r9`
+**Clue 2**: `https://minhjo005.github.io/miku-murder-mystery/?token=vocaloid-clue2-l4j7b6t2`
+**Clue 3**: `https://minhjo005.github.io/miku-murder-mystery/?token=mystery-clue3-z5v8c1x3`
+**Clue 4**: `https://minhjo005.github.io/miku-murder-mystery/?token=detective-clue4-h9k2m7p5`
+**Clue 5**: `https://minhjo005.github.io/miku-murder-mystery/?token=investigation-clue5-w6n3r8q4`
+**Clue 6**: `https://minhjo005.github.io/miku-murder-mystery/?token=evidence-clue6-t2b9j5l7`
+**Clue 7**: `https://minhjo005.github.io/miku-murder-mystery/?token=suspect-clue7-x3c6v1z8`
+**Clue 8**: `https://minhjo005.github.io/miku-murder-mystery/?token=solution-clue8-p5h4k9m2`
 
 ### 3. Security Features
 - Each clue has a unique access token
